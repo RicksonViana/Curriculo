@@ -1,6 +1,12 @@
 let trilho = document.getElementById('trilho')
 let body = document.querySelector('body')
 let icone = document.getElementById('icone');
+let segundos = 0;
+
+setInterval(() => {
+    segundos++;
+    document.getElementById("tempo").textContent = segundos + "s";
+}, 1000);
 
 trilho.addEventListener('click', () => {
     trilho.classList.toggle('dark')

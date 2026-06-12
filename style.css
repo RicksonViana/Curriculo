@@ -6,6 +6,22 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.tempo-site {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    z-index: 999;
+}
+body.dark .tempo-site {
+    background: #333;
+    color: #fff;
+}
 
 body {
     background: #636766;
