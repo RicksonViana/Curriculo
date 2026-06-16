@@ -534,6 +534,28 @@ body.dark .interest ul li {
     .profile_text h2 {
         letter-spacing: -1px;
     }
+    
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-contato textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-contato button {
+    cursor: pointer;
+}
 
 /* 
     body {
@@ -545,4 +567,3 @@ body.dark .interest ul li {
         left: 0;
         top: 0;
     } */
-}

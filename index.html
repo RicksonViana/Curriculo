@@ -105,18 +105,17 @@
             <script src="script.js"></script>
             <div class="about">
                 <h2 class="title2">Sobre Mim</h2>
-                <!-- Substitua a apresentação da clarinha pela sua, contando um pouco sobre você e sua jornada -->
-                <p>Olá! Me chamo Rickson Viana Paix, tenho 20 anos e estou em busca de uma vaga de estágio na area da TI.
-                    <!-- Use <br><br> para pular linhas -->
+                <!-- apresentação -->
+                <p>Olá! Me chamo Rickson Viana Paixão, tenho 20 anos e estou em busca de uma vaga de estágio na area da TI.</p>
                     <br><br>Possuo facilidade em aprender coisas novas, sempre procuro aprender coisas novas para crescimento pessoal, agregando de forma significativa para mim e meus colegas.
-                    <br></br>
+                    
                     <h2 class="title2">Objetivos</h2>
                     <p>Procurando estágio na área de TI para contribuir com o crescimento da empresa e para meu próprio crescimento profissional, executando com competência os serviços sob minha responsabilidade.</p>
                 </div>
             <div class="about">
                 <h2 class="title2">Experiência</h2>
                 <p>Não possuo experiência profissional ainda, mas estou em busca de uma oportunidade para adquirir experiência e crescer profissionalmente.</p>
-            <br><br>    
+            <br>  
             <div class="about skills">
                 <h2 class="title2">Habilidades Profissionais</h2>
                 <div class="box">
@@ -157,6 +156,23 @@
                 <p>Além de outras competências como Raciocínio lógico, proatividade, rápido aprendizado e boa lógica de programação.</p>
             </div>
         </div>
+        <div class="about">
+    <h2 class="title2">Contato</h2>
+
+    <form action="enviar.php" method="POST" class="form-contato" id="formContato">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+        <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+
+        <p id="resposta"></p>
+    </form>
+</div>
+</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
