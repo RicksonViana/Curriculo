@@ -135,6 +135,40 @@ body {
     cursor: pointer;
 }
 
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-print {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #104643;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn-print:hover {
+    transform: scale(1.1);
+    background-color: #54f73e;
+    color: #000;
+}
+
+body.dark .btn-print {
+    background-color: #d4d4d4;
+    color: #000;
+}
+
+body.dark .btn-print:hover {
+    background-color: #4df73e;
+}
+
 .contact_info ul li .icon {
     display: inline-block;
     width: 30px;
