@@ -20,4 +20,30 @@ trilho.addEventListener('click', () => {
         icone.classList.add('bi-brightness-high-fill');
     }
 
+const form = document.getElementById("formContato");
+const resposta = document.getElementById("resposta");
+
+if (form) {
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const dados = new FormData(form);
+
+        fetch("enviar.php", {
+            method: "POST",
+            body: dados
+        })
+        .then(response => response.text())
+        .then(texto => {
+            resposta.textContent = texto;
+            resposta.style.color = "#3ef7ed";
+            form.reset();
+        })
+        .catch(() => {
+            resposta.textContent = "Erro ao enviar a mensagem.";
+            resposta.style.color = "red";
+        });
+    });
+}
+
 })
